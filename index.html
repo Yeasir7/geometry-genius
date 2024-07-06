@@ -32,7 +32,7 @@
                         <span>cm</span>
                       </div>
                       <div>
-                        <p class="text-left ml-2">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                        <p class="text-left ml-2">Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
                       </div>
                       <div class="mx-4">
                         <button onclick="calcTriArea()" class="btn btn-primary w-full">Calculate</button>
@@ -50,8 +50,12 @@
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area (A) = w X I</p>
                       <div class="flex">
-                        <input placeholder="length" class="w-20 p-2 rounded-sm" type="text" name="" id=""><span>cm</span>
-                        <input placeholder="weight" class="w-20 p-2 rounded-sm" type="text" name="" id=""><span>cm</span>
+                        <input placeholder="length" class="w-20 p-2 rounded-sm" type="text" name="" id="rectangle-length"><span>cm</span>
+                        <input placeholder="weight" class="w-20 p-2 rounded-sm" 
+                        type="text" name="" id="rectangle-width"><span>cm</span>
+                      </div>
+                      <div>
+                        <p class="text-left ml-2">Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
                       </div>
                       <div class="card-actions">
                         <button onclick="calcRecArea()" class="btn btn-primary w-full">Calculate</button>
