@@ -63,34 +63,48 @@
                     </div>
                   </div>
                   <!-- paralle -->
-                  <div class="card bg-base-100  shadow-xl">
-                    <figure class="px-10 pt-10">
+                  <div class="card bg-base-100 shadow-xl">
+                    <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                        alt="Shoes"
-                        class="rounded-xl" />
+                        src="images/parallelogram.png"
+                        alt="Shoes" />
                     </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-body">
+                      <h2 class="card-title">parallelogram</h2>
+                      <p>Area (A) = b X h</p>
+                      <div class="flex">
+                        <input placeholder="base" class="w-20 p-2 rounded-sm" type="text" name="" id="parallelogram-base"><span>cm</span>
+                        <input placeholder="height" class="w-20 p-2 rounded-sm" 
+                        type="text" name="" id="parallelogram-height"><span>cm</span>
+                      </div>
+                      <div>
+                        <p class="text-left ml-2">Area: <span id="parallelogram-area">0</span> <span>cm<sup>2</sup></span></p>
+                      </div>
                       <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calcRecArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- rhombus -->
-                  <div class="card bg-base-100  shadow-xl">
-                    <figure class="px-10 pt-10">
+                  <div class="card bg-base-100 shadow-xl">
+                    <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                        alt="Shoes"
-                        class="rounded-xl" />
+                        src="images/rhombus.png"
+                        alt="Shoes" />
                     </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-body">
+                      <h2 class="card-title">rhombus</h2>
+                      <p>Area (A) = .5 X d<sub>1</sub> X d<sub>2</sub></p>
+                      <div class="flex">
+                        <input placeholder="d-first" class="w-20 p-2 rounded-sm" type="text" name="" id="rhombus-d1"><span>cm</span>
+                        <input placeholder="d-second" class="w-20 p-2 rounded-sm" 
+                        type="text" name="" id="hombus-d2"><span>cm</span>
+                      </div>
+                      <div>
+                        <p class="text-left ml-2">Area: <span id="rhombus-area">0</span> <span>cm<sup>2</sup></span></p>
+                      </div>
                       <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calcRecArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -103,5 +117,6 @@
     </main>
     <script src="js/tri.js"></script>
     <script src="js/rectangle.js"></script>
+    <script src="js/calculate.js"></script>
 </body>
 </html>
